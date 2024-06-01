@@ -1,0 +1,513 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 301;
+  font-style: normal;
+
+}
+header {
+    background-color: #BBB;
+}
+
+/*BARRA DE NAVEGACION*/
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /*background-color: #FFF;*/
+    padding: 15px;
+}
+
+.logo {
+    display: block;
+    color: inherit;
+    margin: 0 100px 0 60px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}    
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler, .navbar label{
+    display: none;
+}
+
+.list li{
+    padding: 10px;
+    margin: 2px;
+    border: 1.5px solid #BBB;
+    border-radius: 20px;
+
+}
+
+.list li a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.list li:hover {
+    border: 1.5px solid #000;
+    border-radius: 20px;
+}
+
+/*MAIN*/
+.product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productos {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px;
+}
+.productos li{
+    display: inline-block;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 2px solid #000;
+    padding: 5px;
+
+}
+
+.productos li:hover {
+    border-color: yellowgreen;
+    
+}
+
+.productos li:active {
+    border-color: #088c19;
+}
+
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{ /*Aplicar a h2 lo que sale en .productos li:hover */
+    font-size: 33px;
+}
+
+
+.producto-descripcion {
+    font-size: 18px;
+
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 40px;
+}
+
+.copyright {
+    color: #BBB;
+    font-size: 13px;
+}
+
+
+/*MAIN CONTACTO*/
+
+.contacto {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    margin: 40px 0px;
+
+}
+
+.inputpadron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 10px;
+	border-radius: 3px;
+	border:1px solid #BBB;
+    width: 500px;
+}
+
+.inputpadron:focus {
+	border: 2px solid #000;
+}
+
+
+form .label-inputpadron, p{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+
+
+form textarea {
+    display: block;
+    margin: 0 0 20px;
+    min-height: 200px;
+	max-height: 400px;
+	min-width: 250px;
+	max-width: 510px;
+    width: 510px;
+}
+
+
+.inputradio {
+    margin: 20px 0 20px 0;
+
+}
+
+.inputradio .radioinput{
+    margin: 0 5px;
+}
+
+.inputradio .label-radio{
+    font-size: 20px;
+}
+
+.label-checkbox {
+    margin: 10px 0 20px;
+    font-size: 20px;
+
+}
+
+.inputcheckbox {
+    margin: 10px 0 20px;
+    width: 30px;
+    height: 20px;
+
+}
+
+.label-inputselect {
+    font-size: 20px;
+}
+
+.inputselect{
+    margin: 10px 0 10px 10px;
+}
+
+.enviar{
+    display: block;
+	width: 200px;
+	margin: 10px auto;
+	background: none;
+	border: 1px solid #000;
+	color:#000;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 3px;
+    transition: 1s all;
+}
+
+.enviar:hover{
+	background: #000;
+	color: #fff;
+    transform: scale(1.2);
+} 
+
+
+/*TABLA*/
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    color: #BBB;
+    background: #555;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 8px 15px;
+
+}
+
+
+/* CSS para nuestra HOME*/
+
+.banner {
+    width: 100% ;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+.container1 {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.principal p {
+    margin: 0 0 1em;
+    
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 140px;
+}
+
+
+/*Diferenciales*/
+
+.diferenciales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+
+.items {
+    line-height: 1.5em;
+}
+
+.diferenciales .imagenDiferenciales {
+    width: 70%;
+    margin: 1em auto;
+    opacity: 0.9;
+    transition: 400ms;
+}
+
+.diferenciales .imagenDiferenciales:hover {
+    opacity: 1;
+}
+
+
+.diferenciales .video {
+    width: 70%;
+    margin: 1em auto;
+}
+
+/*mapa*/
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+}
+
+
+
+
+/*Mediaquery para HOME*/
+@media screen and (max-width: 740px) {
+
+.container1 {
+    flex-direction: column;    
+}
+
+}
+
+
+/* MEDIAQUERY PARA EL NAV */
+@media screen and (max-width: 600px) {
+
+
+    .logo {
+            display: block;
+            color: inherit;
+            margin: 0 50px 0 0;
+    }
+    
+    .navbar label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }   
+    
+    .navbar label img{
+        width: 50px;
+        display: block;
+    }   
+    
+    
+    #toggler:checked ~ .menu {
+        max-height: 100%;
+        transition: height 1s; 
+    }
+    
+    .menu {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: height 1s;  
+    }
+    
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    
+    
+    .list li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1.5px solid #BBB;
+        transition: 0.5s; 
+    }
+    
+    .list li:hover {
+        background-color: #CCC;
+        border: 1.5px solid #BBB;
+        border-radius: 0px;
+    }
+    
+    
+    }
+    
+
+@media screen and (max-width: 600px) {
+    
+    form{
+        margin: 40px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .inputpadron {
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 10px;
+        border-radius: 3px;
+        border:1px solid #BBB;
+        width: 300px;
+    }
+    
+    .inputpadron:focus {
+        border: 2px solid #000;
+    }
+    
+    
+    form .label-inputpadron {
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
+    }
+    
+    
+    
+    form textarea {
+        display: block;
+        margin: 0 0 20px;
+        min-height: 200px;
+        max-height: 400px;
+        min-width: 250px;
+        max-width: 320px;
+        width: 320px;
+    }
+    
+    
+    .inputradio {
+        margin: 20px 0 20px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .inputradio p {
+        display: block;
+        margin: 5px auto;
+        width: 100%;
+    }
+    
+    .inputradio .radioinput{
+        margin: 2px 5px;
+    }
+    
+    .inputradio .label-radio{
+        font-size: 20px;
+    }
+    
+    .label-checkbox {
+        margin: 5px 0 5px;
+        font-size: 16.5px;
+    
+    }
+    
+    .inputcheckbox {
+        margin: 0 0 20px;
+        width: 20px;
+        height: 15px;
+    
+    }
+    
+    .label-inputselect {
+        font-size: 16.5px;
+    }
+    
+    .inputselect{
+        margin: 10px 0 10px 10px;
+    }
+    
+
+
+}
